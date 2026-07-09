@@ -3,7 +3,7 @@ package org.example;
 public class EnvioInternacional implements EstrategiaEnvio{
 
     @Override
-    public double CalcularCosto(double pesokg) {
-        return 0;
+    public double calcularCosto(double peso) {
+        return (peso * 6.0) + 10.0;
     }
 }

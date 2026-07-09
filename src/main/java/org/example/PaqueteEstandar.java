@@ -1,7 +1,7 @@
 package org.example;
 
 public class PaqueteEstandar extends Paquete{
-    public PaqueteEstandar(String nombreDestino, double pesoKg, EstrategiaEnvio estrategiaEnvio) {
-        super(nombreDestino, pesoKg, estrategiaEnvio);
+    public PaqueteEstandar(String nombreDestino, double pesoKg) {
+        super(nombreDestino, pesoKg, new EnvioEstandar());
     }
 }

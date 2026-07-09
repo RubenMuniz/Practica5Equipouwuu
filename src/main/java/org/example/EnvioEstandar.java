@@ -2,7 +2,7 @@ package org.example;
 
 public class EnvioEstandar implements EstrategiaEnvio{
     @Override
-    public double CalcularCosto(double pesokg) {
-        return 0;
+    public double calcularCosto(double peso) {
+        return peso * 2.0;
     }
 }

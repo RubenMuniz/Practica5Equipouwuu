@@ -13,8 +13,8 @@ public abstract class Paquete {
         this.pesoKg = pesoKg;
         this.estrategiaEnvio = estrategiaEnvio;
     }
-    public double CostoEnvio(){
-        return estrategiaEnvio.CalcularCosto(pesoKg);
+    public double CalcularCosto(){
+        return estrategiaEnvio.calcularCosto(pesoKg);
     }
 
     public String getNombreDestino() {
